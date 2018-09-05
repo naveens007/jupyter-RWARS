@@ -18,6 +18,8 @@
 #   You should have received a copy of the GNU General Public License
 #   along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+#   Version: 0.9 Alpha
+
 """
 
 import time
@@ -187,7 +189,7 @@ def cargo_hold(inventory):
 	print('''\nYou enter the Cargo Hold, two Enemy Combat Jupyters
 unload a barrage of laser fire at you. Their fire is very accurate
 and you take a direct hit in your main CPU.''')
-	print('\n[-CARGO HOLD - AIRLOCK-]')
+	print( colors.red + '\n[-CARGO HOLD - AIRLOCK-]' , colors.endc)
 	print(colors.green + '....' , colors.endc)
 	time.sleep(1)
 	print(colors.green + '....' , colors.endc)
@@ -489,7 +491,7 @@ deafing sound of a Target Lock.''')
 			print('CTRL866 offline.')
 			time.sleep(1)
 			print('Jupyter terminated.')
-			print('\nGAME OVER\n')
+			print( colors.red + '\nGAME OVER\n' , colors.endc)
 			exit(0)
 	elif cmd == '2':
 		start(inventory)
@@ -558,7 +560,7 @@ def getcmd(cmdlist):
 		print('Jupyter terminated.\n')
 		exit(0)
 	else:
-		print('\n   error. invalid command-\n')
+		print('\n   ERROR: invalid command\n')
 		return getcmd(cmdlist)
 
 if __name__ == '__main__':
