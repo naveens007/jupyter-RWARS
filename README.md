@@ -1,4 +1,4 @@
-# jupyter-flight
+# jupyter-RWARS
 A very simple game based on the works of Andrew Braybrook.
 # Objective
 The player has to take back the control of a ship called the 'KERNEL'.
