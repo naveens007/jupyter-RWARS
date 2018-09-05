@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-#   Word Sorter
+#   RWARS
 #   Copyright (C) 2018  Hemanya Sharma
 
 #   This program is free software: you can redistribute it and/or modify
