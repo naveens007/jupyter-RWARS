@@ -18,7 +18,7 @@
 #   You should have received a copy of the GNU General Public License
 #   along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-#   Version: 0.9 Alpha
+#   Version: 1.0 Alpha
 
 """
 
@@ -34,9 +34,9 @@ class colors:
 
 print('\n' * 100)
 print( colors.red + '\n\n[-RWARS : by Hemanya : type help-]' , colors.endc)
-print(colors.bgred + '\n\n\n                            ------------------------ ')
-print('                                     RWARS           ')
-print('                            ------------------------' , colors.endc)
+print(colors.bgred + '\n\n\n                            |------------------------|   ')
+print('                            |         RWARS          |   ')
+print('                            |------------------------|  ' , colors.endc)
 print ( colors.green + '''                      *                        ¸·´¯¯¯`·¸
                                              <,=====,>
                  , ·······,         *           `·......·´
@@ -178,7 +178,7 @@ port and download the program.''')
 	elif cmd == '1':
 			maintenance(inventory)
 	else:
-		print('\n ERROR: invalid command')
+		print(colors.red + '\n ERROR: ' , colors.endc , 'invalid command')
 
 def cargo_hold(inventory):
 	print('\n----------')
@@ -287,7 +287,8 @@ Jupyter and return to the Main Elevator.''')
 			time.sleep(2)
 			start(inventory)
 	else:
-		print('\n ERROR invalid command-')
+		print(colors.red + '\n ERROR: ' , colors.endc , 'invalid command')
+
 
 def security(inventory):
 	print('\n----------')
@@ -560,7 +561,7 @@ def getcmd(cmdlist):
 		print('Jupyter terminated.\n')
 		exit(0)
 	else:
-		print('\n   ERROR: invalid command\n')
+		print(colors.red + '\n ERROR: ' , colors.endc , 'invalid command')
 		return getcmd(cmdlist)
 
 if __name__ == '__main__':
